@@ -13,7 +13,7 @@ float Distance (float x1, float x2, float y1, float y2){
 }
 
 float Radius (float x1, float x2, float y1, float y2){
-    float radValue = Distance(x1,x2,y1,y2)/2;
+    float radValue = Distance(x1,x2,y1,y2);
     return radValue;
 }
 
@@ -38,10 +38,12 @@ int main (){
     cout << "Masukkan nilai y2 : ";
     cin >> Ay2;
 
-    cout << "Nilai distance atau diameternya adalah "<<fixed<<setprecision(4)<<Distance(Ax1,Ax2,Ay1,Ay2)<<endl;
-    cout << "Nilai radiusnya adalah "<<fixed<<setprecision(4)<<Radius(Ax1,Ax2,Ay1,Ay2)<<endl;
+    cout << "Nilai distance atau radiusnya adalah "<<fixed<<setprecision(4)<<Radius(Ax1,Ax2,Ay1,Ay2)<<endl;
+    cout << "Nilai diameternya adalah "<<fixed<<setprecision(4)<<Radius(Ax1,Ax2,Ay1,Ay2)*2<<endl;
     cout << "Nilai circumference adalah "<<fixed<<setprecision(4)<<Circumference(Ax1,Ax2,Ay1,Ay2)<<endl;
     cout << "Nilai luas area adalah "<<fixed<<setprecision(4)<<Area(Ax1,Ax2,Ay1,Ay2)<<endl;
 
+
     return 0;
 }
+
